@@ -1,0 +1,1 @@
+{"inputUnits":[2],"outputUnits":4,"inputs":{"x":{"dtype":"number","min":30.69182389937107,"max":613.3333333333334},"y":{"dtype":"number","min":17.26890756302521,"max":472.05882352941177}},"outputs":{"label":{"dtype":"string","min":0,"max":1,"uniqueValues":["C","D","E","F"],"legend":{"C":[1,0,0,0],"D":[0,1,0,0],"E":[0,0,1,0],"F":[0,0,0,1]}}},"isNormalized":true}

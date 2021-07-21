@@ -1,4 +1,4 @@
-// Author:
+// Author: Jordan Muturi
 
 // Global UI Variables
 let canvasDiv;
@@ -44,7 +44,11 @@ function setup() {
   };
   model = ml5.neuralNetwork(options);
   // new code below
-
+  let modelInfo = {
+    model: "model/model.json",
+    metadata: "model/model_meta.json",
+    weights: "model/model.weights.bin"
+  };
   createMusicSystem();
 }
 
@@ -53,10 +57,10 @@ function draw() {
 }
 
 function modelLoaded() {
-  radioDiv.style("display", "none");
-  buttonDiv.style("display", "none");
   state = "prediction";
   textP.html("Step 3: Prediction");
+  radioDiv.style("display", "none");
+  buttonDiv.style("display", "none");
 }
 
 function buildButtons() {
